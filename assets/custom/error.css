@@ -1,0 +1,118 @@
+/*!
+ * Web Wallet
+ * Copyright Bavamont
+ * Based on https://getbootstrap.com/docs/4.0/examples/sign-in/signin.css
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #3da9e1;
+  background-image: linear-gradient(120deg, #1a6288, #3da9e1);
+  background-attachment: fixed;
+  color: #FFF !important;
+}
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#particles-js canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.whitetron {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 0.3rem;
+  width: 300px;
+  max-width: 300px;
+  padding: 25px;
+  padding-top: 15px;
+  margin: 0 auto;  
+  color: #fff !important;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #3da9e1;
+  border-color: #3da9e1;
+}
+.btn-primary:hover {
+  color: #1a6288;
+  background-color: #FFF;
+  border-color: #FFF;
+}
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #3da9e1;
+  border-color: #3da9e1;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #3da9e1;
+  border-color: #3da9e1;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(26, 98, 136, 0.5);
+}
+.btn-outline-light {
+  color: #f8f9fa;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f8f9fa;
+}
+.btn-outline-light:hover {
+  color: #3da9e1;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-outline-light:focus, .btn-outline-light.focus {
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+.btn-outline-light.disabled, .btn-outline-light:disabled {
+  color: #3da9e1;
+  background-color: transparent;
+}
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
+.show > .btn-outline-light.dropdown-toggle {
+  color: #3da9e1;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+.dropdown-item {
+  color: #1a6288;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #3da9e1;
+  text-decoration: none;
+  background-color: transparent;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.dropdown-menu {
+  border: none;
+}
+.h1logo {
+  padding:0px; 
+  margin:0px; 
+  font-size: 50px !important; 
+  color:#FFF !important;
+  cursor: default;
+}
+.copyright {
+  font-size: 14px;
+}
