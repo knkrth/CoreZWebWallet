@@ -35,5 +35,5 @@ if ($auth->isLogged())
     $uid = $auth->getSessionUID($auth->getSessionHash());
     $wallet_addresses_list = getDashboardAddresses($uid);
     echo $wallet_addresses_list;
-} else redirect(DOMAIN_URL . LANG_DEFAULT . '/');
+} else $web->redirect(DOMAIN_URL . LANG_DEFAULT . '/');
 ?>

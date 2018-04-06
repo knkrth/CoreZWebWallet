@@ -35,5 +35,5 @@ if ($auth->isLogged())
     $result = $auth->createWalletAddress();
     if ($result['error']['code'] == 0) echo $result['success'];
     else echo $language['text_error_wallet'][$result['error']['code']];
-} else redirect(DOMAIN_URL . LANG_DEFAULT . '/');
+} else $web->redirect(DOMAIN_URL . LANG_DEFAULT . '/');
 ?>

@@ -59,5 +59,5 @@ if ($auth->isLogged())
                     [
                       'CONTENT'                     => $language['text_error_amount_too_low']
                     ]);
-} else redirect(DOMAIN_URL . LANG_DEFAULT . '/');                  
+} else $web->redirect(DOMAIN_URL . LANG_DEFAULT . '/');                  
 ?>
