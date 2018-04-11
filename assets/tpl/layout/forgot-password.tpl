@@ -11,7 +11,7 @@
         <div class="col-12 text-center">
           <form class="form-signin" action="forgot-password.html" class="form form-validation" method="post" id="submitform" name="submitform" role="form">
             <input type="hidden" id="s" name="s" value="submit">
-            <a href="index.html"><img src="{ASSETS_URL}images/logo.png" alt="" width="72" height="72"></a>
+            <a href="index.html"><img src="{ASSETS_URL}images/logo.png" alt="" width="80" height="80"></a>
             <h1 class="h1logo mb-4">CoreZ</h1>
             <div class="whitetron">        
               <h2 class="jumbotron-heading pb-3">{TITLE}</h2> 
