@@ -1,4 +1,4 @@
-        <h2>{TITLE}</h2>
+        <h1 class="jumbotron-heading pb-3">{TITLE}</h1> 
         <form action="account.html" class="form form-validation" method="post" id="submitform" name="submitform" role="form">
           <input type="hidden" id="s" name="s" value="submit">
           {MESSAGE}

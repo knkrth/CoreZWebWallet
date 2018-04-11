@@ -1,3 +1,3 @@
   <tr>
-    <td>{ADDRESS} <a href="{EXPLORER_URL}{ADDRESS}" target=_blank><i class="fas fa-external-link-alt" style="font-size:10px;"></i></a></td>
+    <td><a href="{EXPLORER_URL}{ADDRESS}" target=_blank style="color:#FFF !important; text-decoration: none;"><i class="fas fa-external-link-alt" style="color:#3da9e1 !important; font-size:10px;"></i> {ADDRESS}</a></td>
   </tr>

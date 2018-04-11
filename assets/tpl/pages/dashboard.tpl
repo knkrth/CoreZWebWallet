@@ -1,4 +1,4 @@
-        <h2>{TITLE}</h2>
+        <h1 class="jumbotron-heading">{TITLE}</h1> 
         <div class="row">
         	<div class="col-sm-12 col-md-3 pt-3">
         		<p id="createButton"><button class="btn btn-md btn-primary btn-block" onClick="javascript:createAddress();">{TEXT_CREATE_NEW_ADDRESS}</button></p>

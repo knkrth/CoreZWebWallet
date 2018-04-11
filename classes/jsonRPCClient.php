@@ -129,7 +129,7 @@ class jsonRPCClient {
 		{
 			if ($response['id'] != $currentId) 
 			{
-				throw new Exception('Incorrect response id (request id: '.$currentId.', response id: '.$response['id'].')');
+				echo 'Incorrect response id (request id: '.$currentId.', response id: '.$response['id'].')';
 			}			
 			return $response;
 			

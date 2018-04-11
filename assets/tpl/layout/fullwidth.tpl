@@ -2,15 +2,15 @@
     <script src="{ASSETS_URL}jquery/jquery-3.3.1.min.js"></script>
     <script src="{ASSETS_URL}popper/popper.min.js"></script>
     <script src="{ASSETS_URL}bootstrap/js/bootstrap.min.js"></script>
-    <script src="{ASSETS_URL}particles/particles.min.js"></script>
+    <script src="{ASSETS_URL}particles/particles.js"></script>
     <script src="{ASSETS_URL}jquery-validation/dist/jquery.validate.js"></script>  
     <script src="{ASSETS_URL}toastr/build/toastr.min.js"></script>
     <link href="{ASSETS_URL}custom/pages.css" rel="stylesheet">
     <link href="{ASSETS_URL}toastr/build/toastr.min.css" rel="stylesheet"/>
     <div id="particles-js"></div>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container removeyp">      
-        <a class="navbar-brand" href="index.html"><img src="{ASSETS_URL}images/logo.png" alt="" width="30" height="30"></a>
+      <div class="container removeyp">
+        <a class="navbar-brand" href="index.html">CoreZ</a>
         {NAVIGATION}
         <div class="d-none d-md-block">{SELECT_LANGUAGE}</div>
       </div>

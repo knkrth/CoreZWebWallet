@@ -94,7 +94,7 @@ $language = [
 
   /** Lists */
   'list_navigation'                     => [
-                                            'index.html'                        => 'Web Wallet',
+                                            'index.html'                        => '<strong>Web</strong>Wallet',
                                             'transactions.html'                 => 'Transaktionen',
                                             'http://explorer.corez.site:3001/'  => 'Explorer',
                                             'account.html'                      => 'Einstellungen',                                            

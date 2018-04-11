@@ -14,7 +14,7 @@
             <a href="index.html"><img src="{ASSETS_URL}images/logo.png" alt="" width="72" height="72"></a>
             <h1 class="h1logo mb-4">CoreZ</h1>
             <div class="whitetron">        
-              <h1 class="h3 mb-3 font-weight-normal">{TITLE}</h1>
+              <h2 class="jumbotron-heading pb-3">{TITLE}</h2> 
               {MESSAGE}
               {MESSAGE_VALIDATION}
               <label for="email" class="sr-only">{TEXT_EMAIL_ADDRESS}</label>
@@ -33,7 +33,7 @@
     <script src="{ASSETS_URL}jquery/jquery-3.3.1.min.js"></script>
     <script src="{ASSETS_URL}popper/popper.min.js"></script>
     <script src="{ASSETS_URL}bootstrap/js/bootstrap.min.js"></script>
-    <script src="{ASSETS_URL}particles/particles.min.js"></script>
+    <script src="{ASSETS_URL}particles/particles.js"></script>
     <script src="{ASSETS_URL}jquery-validation/dist/jquery.validate.js"></script>
     <script src="{ASSETS_URL}custom/app.js"></script>
     <script>

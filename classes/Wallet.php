@@ -63,7 +63,7 @@ class Wallet
      * @param int $minconf
      * @return array
      */
-    public function getBalance($account = '', int $minconf = 6)
+    public function getBalance($account = '', $minconf = 6)
     {
         if (!empty($account)) return $this->jsonRpc->getbalance($account, $minconf);
         else return $this->jsonRpc->getbalance();
@@ -87,7 +87,7 @@ class Wallet
      * @param int $minconf
      * @return array
      */
-    public function getReceivedByAccount($account, int $minconf = 6)
+    public function getReceivedByAccount($account, $minconf = 6)
     {
         return $this->jsonRpc->getreceivedbyaccount($account, $minconf);
     }
@@ -99,7 +99,7 @@ class Wallet
      * @param int $minconf
      * @return array
      */
-    public function getReceivedByAddress($address, int $minconf = 6)
+    public function getReceivedByAddress($address, $minconf = 6)
     {
         return $this->jsonRpc->getreceivedbyaccount($address, $minconf);
     }
@@ -145,7 +145,7 @@ class Wallet
      * @param bool $subtractFeeFromAmount
      * @return array
      */
-    public function instantSendToAddress($address, float $amount, $comment = '', $commentTo = '', bool $subtractFeeFromAmount = true)
+    public function instantSendToAddress($address, $amount, $comment = '', $commentTo = '', $subtractFeeFromAmount = true)
     {
         return $this->jsonRpc->instantsendtoaddress($address, $amount, $comment, $commentTo, $subtractFeeFromAmount);
     }
@@ -156,7 +156,7 @@ class Wallet
      * @param int $minconf     
      * @return array
      */
-    public function listAccounts(int $minconf = 10)
+    public function listAccounts($minconf = 10)
     {
         return $this->jsonRpc->listAccounts($minconf);
     }
@@ -167,7 +167,7 @@ class Wallet
      * @param int $minconf     
      * @return array
      */
-    public function listReceivedByAccount(int $minconf = 10)
+    public function listReceivedByAccount($minconf = 10)
     {
         return $this->jsonRpc->listreceivedbyaccount($minconf);
     }
@@ -178,7 +178,7 @@ class Wallet
      * @param int $minconf     
      * @return array
      */
-    public function listReceivedByAddress(int $minconf = 10)
+    public function listReceivedByAddress($minconf = 10)
     {
         return $this->jsonRpc->listreceivedbyaddress($minconf);
     }
@@ -191,7 +191,7 @@ class Wallet
      * @param string $from
      * @return array
      */
-    public function listTransactions($account, int $count = 10, $from = '')
+    public function listTransactions($account, $count = 10, $from = '')
     {
         if (!empty($from)) return $this->jsonRpc->listtransactions($account, $count, $from);
         else return $this->jsonRpc->listtransactions($account, $count);
@@ -207,7 +207,7 @@ class Wallet
      * @param string $comment
      * @return array
      */
-    public function move($fromAccount, $toAccount, float $amount, int $minconf = 6, $comment = '')
+    public function move($fromAccount, $toAccount, $amount, $minconf = 6, $comment = '')
     {
         return $this->jsonRpc->move($fromAccount, $toAccount, $amount, $minconf, $comment);
     }     
@@ -223,7 +223,7 @@ class Wallet
      * @param string $commentTo
      * @return array
      */
-    public function sendFrom($fromAccount, $toAddress, float $amount, int $minconf = 6, $comment = '', $commentTo = '')
+    public function sendFrom($fromAccount, $toAddress, $amount, $minconf = 6, $comment = '', $commentTo = '')
     {
         return $this->jsonRpc->sendfrom($fromAccount, $toAddress, $amount, $minconf, $comment, $commentTo);
     }    
@@ -240,7 +240,7 @@ class Wallet
      * @param bool $usePs     
      * @return array
      */
-    public function sendMany($fromAccount, $addressList, int $minconf = 6, $comment = '', bool $subtractFeeFromAmount = true, bool $useIs = false, bool $usePs = false)
+    public function sendMany($fromAccount, $addressList, $minconf = 6, $comment = '', $subtractFeeFromAmount = true, $useIs = false, $usePs = false)
     {
         return $this->jsonRpc->sendmany($fromAccount, $addressList, $minconf, $comment, $subtractFeeFromAmount, $useIs, $usePs);
     } 
@@ -257,7 +257,7 @@ class Wallet
      * @param bool $usePs
      * @return array
      */
-    public function sendToAddress($address, float $amount, $comment = '', $commentTo = '', bool $subtractFeeFromAmount = true, bool $useIs = false, bool $usePs = false)
+    public function sendToAddress($address, $amount, $comment = '', $commentTo = '', $subtractFeeFromAmount = true, $useIs = false, $usePs = false)
     {
         return $this->jsonRpc->sendtoaddress($address, $amount, $comment, $commentTo, $subtractFeeFromAmount, $useIs, $usePs);
     }

@@ -14,8 +14,10 @@ Now visit http://YOURDOMAIN/en/index.html?update=true to update the configuratio
 You can add additional languages by creating a language file under languages/ and adding the language in the config.php in the $lang_allowed array.
 
 ### Update
+04/11/2018	Updated layout and bug fixes
 04/06/2018	Small fixes
 04/05/2018	Initial release
 
 ### Donations
 Want to help the project? You can donate some CRZ to ZrrEJze7MCA1dQmr8KRfFdugUhxQ28Vrtu
+BTC 1FiZ9vbngV3ged2SRcFfWEXmU5re3V76KP

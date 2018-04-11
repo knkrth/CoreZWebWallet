@@ -45,7 +45,7 @@ class Auth extends \PHPAuth\Auth
                 $walletAddress = $row['address'];
                 $walletAccount = $row['account'];
             }
-            $response = $this->coreRpcClient->getBalance($walletAccount);
+            $response = $this->coreRpcClient->getBalance($walletAccount, 6);
             if (!$response['error'])
             {
                 $returnResult['success'] = number_format(floatval(preg_replace('/\s+/', '', $response['result'])), 8, '.', '');
@@ -105,7 +105,8 @@ class Auth extends \PHPAuth\Auth
                     $fromAddress = $row['address'];
                     $fromAccount = $row['account'];
                 }
-                $response = $this->coreRpcClient->sendFrom($fromAccount, $toAddress, $amount);
+                $newAmount = number_format(floatval(preg_replace('/\s+/', '', $newAmount)), 8, '.', '');
+                $response = $this->coreRpcClient->sendFrom($fromAccount, $toAddress, $newAmount);
                 if (!$response['error'])
                 {
                     $returnResult['success'] = $response['result'];

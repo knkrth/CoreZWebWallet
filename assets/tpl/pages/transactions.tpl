@@ -1,4 +1,4 @@
-        <h2>{TITLE}</h2>
+        <h1 class="jumbotron-heading">{TITLE}</h1> 
         <div class="row">
         	<div class="col-sm-12 text-right pt-3">
         		<h6><strong>{TEXT_BALANCE} ({TICKER})</strong><br>{BALANCE}</h6>
