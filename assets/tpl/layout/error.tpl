@@ -9,7 +9,7 @@
       </div>
       <div class="row justify-content-md-center mt-4">
         <div class="col-12 text-center">
-            <a href="index.html"><img src="{ASSETS_URL}images/logo.png" alt="" width="80" height="80"></a>
+            <a href="index.html"><img src="{ASSETS_URL}images/logo.svg" alt="" width="130" height="130"></a>
             <h1 class="h1logo mb-4">CoreZ</h1>
             <div class="whitetron">
               <h2 class="jumbotron-heading pb-3">{TITLE}</h2> 
