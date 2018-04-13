@@ -133,6 +133,9 @@ body {
 .bg-dark {
   background: rgba(0,0,0,0.4) !important; 
 }
+.bg-very-dark {
+  background: rgba(0,0,0,0.65) !important; 
+}
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
   font-weight: 300;
@@ -156,7 +159,7 @@ body {
     text-transform: capitalize;
 }
 .jumbotron {
-  background: rgba(0,0,0,0.4); // 255,255,255,0.95
+  background: rgba(0,0,0,0.4);
   padding: 1rem 1rem !important;
   padding-bottom: 2rem !important;
   margin-bottom: 2rem;
@@ -173,7 +176,7 @@ body {
 }
 .jumbotron-inner {
   padding: 1rem 1rem;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.3);
   border-radius: 0.3rem;
   border: 1px solid rgba(255,255,255,0.8);;
 }

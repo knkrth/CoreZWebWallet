@@ -8,7 +8,7 @@
     <link href="{ASSETS_URL}custom/pages.css" rel="stylesheet">
     <link href="{ASSETS_URL}toastr/build/toastr.min.css" rel="stylesheet"/>
     <div id="particles-js"></div>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-very-dark">
       <div class="container removeyp">
         <a class="navbar-brand" href="index.html">CoreZ</a>
         {NAVIGATION}
