@@ -122,8 +122,9 @@ class jsonRPCClient {
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $request);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
+		
 		$response = json_decode(curl_exec($ch),true);
+		curl_close($ch);
 
 		if (!$this->notification) 
 		{
